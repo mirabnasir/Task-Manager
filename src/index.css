@@ -1,0 +1,149 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f0e9; /* Pale Beige */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .to-do-list {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    max-width: 420px;
+    width: 100%;
+  }
+  
+  h2 {
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  
+  /* Input and Add Button */
+  .to-do-list div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .to-do-list input {
+    width: 70%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  .to-do-list input:focus {
+    border-color: #00796b;
+  }
+  
+  .button-add {
+    background-color: #00796b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button-add:hover {
+    background-color: #004d40;
+  }
+  
+  /* Task List */
+  ol {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    background-color: #fafafa;
+    padding: 15px;
+    margin-bottom: 12px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #e0e0e0;
+  }
+  
+  li .text {
+    flex: 1;
+    word-break: break-word;
+    color: #333;
+    font-weight: 500;
+  }
+  
+  li button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #00796b;
+    margin-left: 10px;
+    transition: color 0.3s, transform 0.2s;
+    display: flex;
+    align-items: center;
+  }
+  
+  li button:hover {
+    color: #004d40;
+  }
+  
+  li .delete-button {
+    color: #d32f2f;
+  }
+  
+  li .delete-button:hover {
+    color: #b71c1c;
+  }
+  
+  li .up-button svg,
+  li .down-button svg {
+    margin-right: 5px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 480px) {
+    .to-do-list {
+      padding: 20px;
+    }
+  
+    h2 {
+      font-size: 20px;
+    }
+  
+    .to-do-list input {
+      width: 65%;
+      font-size: 14px;
+    }
+  
+    .button-add {
+      padding: 8px 16px;
+      font-size: 14px;
+    }
+  
+    li {
+      padding: 12px;
+    }
+  
+    li button {
+      font-size: 14px;
+    }
+  }
+  
